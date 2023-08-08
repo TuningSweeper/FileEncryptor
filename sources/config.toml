@@ -1,0 +1,11 @@
+[build]
+rustflags = [
+    "-W", "clippy::pedantic",
+    "-W", "clippy::style",
+    "-A", "clippy::must_use_candidate",
+    "-D", "future-incompatible",
+    "-W", "nonstandard-style",
+    "-W", "rust-2021-compatibility",
+    "-D", "unsafe-code",
+]
+

@@ -1,0 +1,26 @@
+[package]
+name = "encryptor"
+version = "0.0.3"
+edition = "2021"
+
+[dependencies]
+generic-array = "0.14.7"
+hex = "0.4.3"
+rand = "0.8.5"
+aes-gcm = "0.10.2"
+ring = "0.16.10"
+rpassword = "7.2.0"
+dialoguer = "0.10.4"
+regex = "1.5.4"
+tar = "0.4.29"
+flate2 = "1.0.19"
+zeroize = "1.6.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+overflow-checks = true
+strip = true
+panic = "abort"
+
